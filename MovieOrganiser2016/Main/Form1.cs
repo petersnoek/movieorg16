@@ -21,6 +21,10 @@ namespace Main
             settings = new SettingsHelper();
             
             InitializeComponent();
+
+            FolderHelper hlp = new FolderHelper();
+            var result = hlp.GetFolder("C:\\movies");
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
